@@ -98,8 +98,8 @@ Add these in Vercel dashboard under Project Settings > Environment Variables:
    - Configure error tracking (Sentry, etc.)
 
 3. **Backend Deployment**
-   - Deploy Python backend separately
-   - Update API URLs in environment variables
+   - Deploy Python backend to Railway, Render, or separate Vercel project
+   - Update `VITE_*_API_URL` environment variables with backend URLs
 
 4. **Performance Optimization**
    - Enable Vercel Speed Insights

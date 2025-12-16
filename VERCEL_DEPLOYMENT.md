@@ -57,15 +57,20 @@ VITE_ELEVENLABS_DEFAULT_VOICE_ID=21m00Tcm4TlvDq8ikWAM
 
 ## Backend Deployment
 
-This project includes a Python Flask backend. For production:
+This project includes a Python Flask backend that needs to be deployed separately:
 
-### Option 1: Deploy Backend Separately
-1. Deploy the `backend/` folder to a separate Vercel project
-2. Update the `VITE_*_API_URL` variables to point to your backend URL
+### Recommended: Deploy Backend to Railway/Render
+1. Create a new project on [Railway](https://railway.app) or [Render](https://render.com)
+2. Connect your GitHub repository
+3. Set the root directory to `backend/`
+4. Configure environment variables for the backend
+5. Update frontend `VITE_*_API_URL` variables to point to your backend URL
 
-### Option 2: Use External Services
-1. Deploy backend to Railway, Render, or AWS
-2. Update environment variables accordingly
+### Alternative: Separate Vercel Project for Backend
+1. Create a new Vercel project
+2. Deploy only the `backend/` folder
+3. Configure as a Node.js/Python function
+4. Update API URLs in frontend environment variables
 
 ## Post-Deployment Checklist
 
