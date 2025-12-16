@@ -1,0 +1,54 @@
+# Development files
+.env
+.env.local
+.env.development
+*.log
+logs/
+
+# Backend files (if deploying separately)
+backend/
+Wav2Lip-master/
+
+# Build artifacts
+node_modules/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+coverage/
+.nyc_output/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Models and large files
+models/
+output/
+avatars/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Documentation (keep essential ones)
+!README.md
+!VERCEL_DEPLOYMENT.md

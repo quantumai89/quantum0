@@ -12,8 +12,8 @@ import {
   Wav2LipOutput,
   VideoRenderOutput,
   TranscriptOutput,
-  PhonemeTimings,
-  TranscriptWord,
+  // PhonemeTimings,
+  // TranscriptWord,
   VIDEO_SPECS,
   TTS_SPECS,
 } from '../lib/wav2lip';

@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import * as fc from 'fast-check';
 import {
   createMockPipeline,
-  CourseGenerationPipeline,
+  // CourseGenerationPipeline,
   LessonInput,
   AIInstructor,
   LessonGenerationJob,
@@ -146,7 +146,7 @@ describe('Course Generation Pipeline', () => {
       ];
 
       const completedLessons: string[] = [];
-      const onComplete = vi.fn((lesson, index) => {
+      const onComplete = vi.fn((lesson, _index) => {
         completedLessons.push(lesson.lessonId);
       });
 

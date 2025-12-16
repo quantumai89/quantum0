@@ -5,8 +5,6 @@ import {
   CourseAssemblyResult,
 } from '../lib/wav2lip/course-assembly-service';
 import {
-  CourseGenerationJob,
-  LessonGenerationJob,
   CourseStructure,
   ModuleStructure,
   LessonStructure,

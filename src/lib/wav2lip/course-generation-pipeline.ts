@@ -60,11 +60,14 @@ export class CourseGenerationPipeline {
   async generateLesson(input: LessonInput): Promise<GeneratedLesson> {
     const job: LessonGenerationJob = {
       id: `job-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-      lessonId: input.lessonId,
+      courseGenerationJobId: 'temp-course-id',
+      lessonIndex: 0,
+      title: 'Lesson',
+      content: input.script,
       script: input.script,
-      aiInstructorId: input.instructor.id,
       status: 'pending',
       progress: 0,
+      retryCount: 0,
       createdAt: new Date(),
     };
 

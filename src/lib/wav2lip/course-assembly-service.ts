@@ -6,7 +6,6 @@ import {
   CourseGenerationJob,
   LessonGenerationJob,
   CourseStructure,
-  ModuleStructure,
 } from './types';
 
 export interface CourseAssemblyResult {

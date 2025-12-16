@@ -222,12 +222,12 @@ export class MockTranscriptService extends TranscriptService {
     super({ apiUrl: 'http://mock-whisper-api' });
   }
 
-  async generateTranscript(audioUrl: string): Promise<TranscriptOutput> {
+  async generateTranscript(_audioUrl: string): Promise<TranscriptOutput> {
     // Generate mock transcript
     const mockText = 'Welcome to this lesson. Today we will learn about artificial intelligence and machine learning. These technologies are transforming how we work and live.';
     const mockWords = this.generateMockWords(mockText);
 
-    const vttContent = this.generateMockVTT(mockWords);
+    this.generateMockVTT(mockWords);
 
     const output: TranscriptOutput = {
       words: mockWords,

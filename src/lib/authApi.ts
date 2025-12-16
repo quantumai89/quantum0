@@ -1,5 +1,5 @@
 import api from './api';
-import { LoginCredentials, RegisterData, User } from '@/types';
+import { LoginCredentials, RegisterData } from '@/types';
 
 export const authApi = {
     // Register new user
